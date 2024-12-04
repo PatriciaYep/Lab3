@@ -5,7 +5,6 @@ from app_deployment_mysql import deploy_mysql
 from create_keypair import create_keypair
 #from capture_aws_credentials import get_aws_credentials
 from mainsql import mainsql
-from main_request import main_request
 import requests
 import boto3
 import ipaddress
