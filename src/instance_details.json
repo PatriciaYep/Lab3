@@ -1,0 +1,38 @@
+[
+    {
+        "Name": "manager1",
+        "InstanceID": "i-00824da0add948cd1",
+        "PublicDNS": "ec2-34-229-56-79.compute-1.amazonaws.com",
+        "PublicIP": "34.229.56.79"
+    },
+    {
+        "Name": "worker2",
+        "InstanceID": "i-0f7c7546ce57f1928",
+        "PublicDNS": "ec2-54-158-189-35.compute-1.amazonaws.com",
+        "PublicIP": "54.158.189.35"
+    },
+    {
+        "Name": "worker3",
+        "InstanceID": "i-04190cc0d6d0534e8",
+        "PublicDNS": "ec2-100-25-137-174.compute-1.amazonaws.com",
+        "PublicIP": "100.25.137.174"
+    },
+    {
+        "Name": "gatekeeper1",
+        "InstanceID": "i-050ef38c8cc3690e9",
+        "PublicDNS": "ec2-100-26-236-138.compute-1.amazonaws.com",
+        "PublicIP": "100.26.236.138"
+    },
+    {
+        "Name": "gatekeeper2",
+        "InstanceID": "i-05f35ccde34cb95c6",
+        "PublicDNS": "ec2-3-80-18-92.compute-1.amazonaws.com",
+        "PublicIP": "3.80.18.92"
+    },
+    {
+        "Name": "proxy",
+        "InstanceID": "i-025d66029a0de9ae5",
+        "PublicDNS": "ec2-34-202-159-137.compute-1.amazonaws.com",
+        "PublicIP": "34.202.159.137"
+    }
+]

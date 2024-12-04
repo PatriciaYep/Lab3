@@ -1,0 +1,15 @@
+VPC_CIDR_BLOCK = '10.0.0.0/16'
+IG_DEST_CIDR_BLOCK = '0.0.0.0/0'
+PUBLIC_CIDR_BLOCK = '10.0.1.0/24'
+PRIVATE_CLUSTER1_CIDR_BLOCK = '10.0.2.0/24'
+PRIVATE_CLUSTER2_CIDR_BLOCK = '10.0.3.0/24'
+AVAILABILITY_ZONE = 'us-east-1a'
+CLUSTER_TAG = 'cluster'
+PATTERN_TAG = 'pattern'
+CLUSTER1_NAME = 'cluster1-app-instance'
+CLUSTER2_NAME = 'cluster2-app-instance'
+LARGE_TYPE = 't2.large'
+MICRO_TYPE = 't2.micro'
+CLUSTER_COUNT = 3
+PATTERN_COUNT = 1
+IMAGE_ID = 'ami-005fc0f236362e99f'      #'ami-0ebfd941bbafe70c6'
