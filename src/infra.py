@@ -60,18 +60,9 @@ def main():
 
     # Set up VPC, subnet, and security groups
     vpc, vpc_id, subnet = create_vpc_and_subnet(ec2_client, ec2)
-    #lb_sg = create_security_groups(ec2_client, vpc_id, my_ip_cidr) 
     gk_sg, th_sg, pm_sg, cluster_sg = create_security_groups(ec2_client, vpc_id, my_ip_cidr)
     
     # Launch EC2 instances
-    #worker_instances = create_instances(ec2, constants.CLUSTER1_TYPE, constants.CLUSTER1_COUNT, subnet, lb_sg, 'Worker', keypair)
-    #orchestrator_instance_list = create_instances(ec2, constants.CLUSTER2_TYPE, constants.CLUSTER2_COUNT, subnet, lb_sg, 'Orchestrator', keypair)
-    #orchestrator_instance = orchestrator_instance_list[0]  
-    
-    #cluster1_instances = create_instances(ec2, constants.CLUSTER1_TYPE, 3, subnet, cluster_sg, 'Cluster1', keypair)
-    #cluster2_instances = create_instances(ec2, constants.CLUSTER2_TYPE, 5, subnet, cluster_sg, 'Cluster2', keypair)
-    #load_balancer_instance = create_instances(ec2, constants.CLUSTER1_TYPE, 1, subnet, lb_sg, 'LoadBalancer', keypair)[0]
-  
     cluster_instances = create_instances(ec2, constants.MICRO_TYPE, constants.CLUSTER_COUNT, subnet, cluster_sg, 'Cluster', keypair)
     gatekeeper1_instance = create_instances(ec2, constants.LARGE_TYPE, constants.PATTERN_COUNT, subnet, gk_sg, 'Pattern', keypair)[0]
     gatekeeper2_instance = create_instances(ec2, constants.LARGE_TYPE, constants.PATTERN_COUNT, subnet, th_sg, 'Pattern', keypair)[0]
